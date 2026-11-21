@@ -42,8 +42,8 @@ Todas son **gratis** y todas son **de prueba**: con ellas no se cobra ni se comp
 solo *consulta* productos y precios, y **nunca paga** pedidos en CJ. Los pedidos en CJ
 solo se compran cuando vos los aprobás y pagás.
 
-⚠️ CJ limita la cantidad de veces que se puede pedir acceso (aprox. una vez cada 5 minutos).
-Si `npm run verificar` dice "too many requests", esperá un rato y probá de nuevo.
+⚠️ CJ permite como máximo 1 consulta por segundo. El comparador ya espera solo entre consultas;
+si alguna vez ves "too many requests", esperá un minuto y probá de nuevo.
 
 ---
 

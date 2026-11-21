@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "verificar": "node scripts/verificar-claves.mjs"
+    "verificar": "node scripts/verificar-claves.mjs",
+    "comparar": "node scripts/comparar-proveedores.mjs",
+    "probar-comparador": "node scripts/probar-comparador.mjs"
   },
   "dependencies": {
     "next": "^15.5.29",

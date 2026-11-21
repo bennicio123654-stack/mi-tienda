@@ -32,6 +32,15 @@ Tienda online de ropa y accesorios Y2K, con dropshipping para EE.UU., Argentina 
 |---|---|
 | `npm run dev` | Prende la tienda en tu compu |
 | `npm run verificar` | Revisa que tus claves del `.env` funcionen (no compra ni cobra nada) |
+| `npm run comparar -- "butterfly clip"` | Compara proveedores de CJ para EE.UU. y te sugiere el mejor (solo consulta) |
+| `npm run comparar -- "baby tee" --mercado EU` | Lo mismo para Europa (`--mercado AR` para Argentina) |
+| `npm run probar-comparador` | Prueba el comparador con un CJ "de mentira" (no necesita clave) |
+
+### Opciones del comparador
+- `--mercado US` / `EU` / `AR`: para qué clientes comparar (por defecto US).
+- `--cantidad 8`: cuántos productos revisar (máximo 20).
+- `--precio-max 20`: precio máximo del producto en CJ, en dólares.
+- Los resultados quedan guardados en la carpeta `informes/` (no se sube a GitHub).
 
 ## Dónde está cada cosa
 
@@ -42,6 +51,9 @@ Tienda online de ropa y accesorios Y2K, con dropshipping para EE.UU., Argentina 
 | Textos de la web (inglés y español) | `src/i18n/messages.ts` |
 | Productos (por ahora de ejemplo) | `src/data/products.ts` |
 | Claves secretas | `.env` (ver [docs/CLAVES.md](docs/CLAVES.md)) |
+
+## Plan con presupuesto cero
+Ver [docs/PLAN.md](docs/PLAN.md).
 
 ## Seguridad
 - Las claves van **solo** en `.env`, que está bloqueado para que nunca se suba a GitHub.

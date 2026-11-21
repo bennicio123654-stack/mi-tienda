@@ -36,7 +36,7 @@ const checks = [
       });
       const data = await res.json().catch(() => ({}));
       if (data.result === true || data.code === 200) return "ok";
-      return `CJ respondió: ${data.message || res.status} (si dice "too many requests", esperá 5 minutos)`;
+      return `CJ respondió: ${data.message || res.status} (si dice "too many requests", esperá un minuto)`;
     },
   },
   {

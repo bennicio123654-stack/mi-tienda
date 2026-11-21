@@ -44,3 +44,7 @@ next-env.d.ts
 # La línea ".env*" de arriba hace que NUNCA se suban a GitHub.
 # La única excepción es .env.example, que es una plantilla SIN claves reales.
 !.env.example
+
+# Pase de acceso de CJ (es secreto) e informes del comparador
+.cj-token.json
+/informes/
